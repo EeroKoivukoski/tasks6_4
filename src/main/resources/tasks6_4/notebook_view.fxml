@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="tasks6_4.controller.NoteController"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefWidth="600.0" prefHeight="400.0">
+
+    <top>
+        <Label text="My Notebook App" style="-fx-font-size: 20; -fx-padding: 10;" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="10" style="-fx-padding: 10;">
+            <children>
+                <TextField fx:id="titleField" promptText="Enter note title"/>
+                <TextArea fx:id="contentArea" prefHeight="100" promptText="Enter note content"/>
+                <Button fx:id="addButton" text="Add" onAction="#addNote"/>
+            </children>
+        </VBox>
+    </center>
+
+    <bottom>
+        <ListView fx:id="notesList" prefHeight="200" BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>
