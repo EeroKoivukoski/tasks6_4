@@ -9,7 +9,6 @@ public class Note {
         this.content = content;
     }
 
-    // Getters and setters
     public String getTitle() {
         return title;
     }
